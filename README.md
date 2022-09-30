@@ -120,12 +120,89 @@ plt.scatter(x,y)
 plt.plot(x,prediction)
 
 ```
+![Снимок экрана 2022-09-30 в 11 26 58](https://user-images.githubusercontent.com/83164641/193227020-071c7b69-da9d-4c81-ac70-ac7a05e51ceb.png)
 
-## Задание 3
+ - На второй итерации отображаются значения параметров, значения
+потерь и эффекты визуализации после итерации
+
+```py
+
+a,b = iterate(a,b,x,y,2)
+prediction=model(a,b,x)
+loss = loss_function(a, b, x, y)
+print(a,b,loss)
+plt.scatter(x,y)
+plt.plot(x,prediction)
+
+```
+![Снимок экрана 2022-09-30 в 11 29 00](https://user-images.githubusercontent.com/83164641/193227443-5ee6bbed-5e92-4a7c-9ab4-905648516442.png)
+
+ - Третья итерация показывает значения параметров, значения потерь и
+визуализацию после итерации
+
+```py
+
+a,b = iterate(a,b,x,y,3)
+prediction=model(a,b,x)
+loss = loss_function(a, b, x, y)
+print(a,b,loss)
+plt.scatter(x,y)
+plt.plot(x,prediction)
+
+```
+![Снимок экрана 2022-09-30 в 11 31 20](https://user-images.githubusercontent.com/83164641/193227898-4cb2fdb6-8fd9-4231-942b-8e5483fa9684.png)
+
+ - На четвертой итерации отображаются значения параметров, значения
+потерь и эффекты визуализации
+
+```py
+
+a,b = iterate(a,b,x,y,4)
+prediction=model(a,b,x)
+loss = loss_function(a, b, x, y)
+print(a,b,loss)
+plt.scatter(x,y)
+plt.plot(x,prediction)
+
+```
+![Снимок экрана 2022-09-30 в 11 33 37](https://user-images.githubusercontent.com/83164641/193228328-99937ffc-9225-4bb0-a085-8eedd17339be.png)
+
+ - Пятая итерация показывает значение параметра, значение потерь и
+эффект визуализации после итерации
+
+```py
+
+a,b = iterate(a,b,x,y,5)
+prediction=model(a,b,x)
+loss = loss_function(a, b, x, y)
+print(a,b,loss)
+plt.scatter(x,y)
+plt.plot(x,prediction)
+
+```
+![Снимок экрана 2022-09-30 в 11 35 01](https://user-images.githubusercontent.com/83164641/193228593-3b2102d4-4d97-4f9b-a162-6836255438ca.png)
+
+ - 10000-я итерация, показывающая значения параметров, потери и
+визуализацию после итерации
+
+```py
+
+a,b = iterate(a,b,x,y,10000)
+prediction=model(a,b,x)
+loss = loss_function(a, b, x, y)
+print(a,b,loss)
+plt.scatter(x,y)
+plt.plot(x,prediction)
+
+```
+![Снимок экрана 2022-09-30 в 11 36 23](https://user-images.githubusercontent.com/83164641/193228854-afbd4943-731b-44ae-b96b-45431fcf71de.png)
+
+
+## Задание 3.1
 ### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
 
 
-## Задание 3
+## Задание 3.2
 ### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
 
 
